@@ -7,6 +7,14 @@ const App = () => {
 
 const dispatch =useDispatch();
 //code here 
+  const handleColorClick = () => {
+    dispatch(changeColor(colorState === 'red' ? 'green' : 'red'));
+  };
+
+  const handleStyleClick = () => {
+    dispatch(changeStyle(styleState === 'Arial' ? 'Georgia' : 'Arial'));
+  };
+
 
   return (
     <div id="main">
